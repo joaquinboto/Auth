@@ -6,7 +6,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
 require('dotenv').config();
-require('./auth/user-controllers');
+require('./auth/auth');
 
 
 mongoose.connect("mongodb://localhost:27017/users" , (err) => {
